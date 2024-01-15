@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The last of us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/script.js" defer></script>
+
+
+
+  </head>
+  <body class="body">
+    <header id="top_header" class="clearfix">
+      <nav class="navbar">
+          <h1 class="logo">The <span> <a href="easteregg.html" target="_blank" class="lientitre">last </a></span>of us</h1>
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+              <li><a href="lucioles.html">Accueil</a></li>
+              <li><a href="luciolesapropos.html">À propos de nous</a></li>
+
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+      </nav>
+    </header>
+  
+  <main>
+    <section id="bannermedecin" class="clearfix">
+      <div id="bannermedecin_content_wrapper">
+        
+        <div class="content">
+          <h2 class="title">Medecin</h2>
+          <p class="description">
+            L’un des postes les plus cruciaux au sein des Lucioles. 
+            Les médecins œuvrent à trouver un remède au cordyceps, 
+            mais également à soigner tous les malades et blessés se présentant à nos portes. 
+            En étant médecin, vous contribuez à notre survie à tous.
+          </p> 
+        </div>
+      </div>
+    </section>
+    <h2 class="métier">Voici votre mission.</h2>
+
+    <section class="img-liste">
+      <ol class='img-liste-parent'>
+        <li class='img-liste-item'>
+          <div class='img-liste-test'>
+            
+            <div class='img-liste-text-test'>
+              <h3>Votre mission est d'espionner et revenir avec un maximum d'informations sur les agents de la Fedra.</h3>
+              <p>Trouver les personnes haut placées, 
+                amener un maximum d'informations sur elles. 
+                Une fois cela fait, dénoncé les.</p>
+
+              <p>Votre autre mission, si vous vous en sentez capable est de sauver un maximum de vie en trouvant du matériel médical</p>
+            </div>
+              <div class="image_mission">
+                <!-- Lien autour de l'image pour la rendre cliquable -->
+                <a class="imageLink" onclick="imageClickHandler_medecin()">
+                  <!-- Balise img pour afficher l'image -->
+                  <img class="displayedImage" src="./asset/media/salleopabandonnée.jpg" alt="Description de l'image">
+                </a>
+              </div>
+
+              <div class="bouton_mission">
+                <!-- HTML pour le bouton et l'image -->
+                <button class="imageButton" onclick="toggleImage()">
+                  Afficher/cacher l'environnement
+                </button>
+
+                <!-- HTML pour le bouton -->
+                <button class="popupButton" onclick="showPopup_medecin()">
+                  Afficher l'inventaire
+                </button>
+              </div>
+          </div>
+        </li>
+      </ol>  
+    </section>
+    <div class="main-holdermission">
+      <div class="wrappermdpmission">
+        <div class='img-liste-text-test'>
+          <p>Noter le mot de passe sous forme de Nom Prénom / Nom Prénom</p>    
+        </div>
+
+        <form class="form1">
+          <div class="inputnobottomborder">
+              
+              <div class="inputcontent">
+                  <input class="inputcontenttext" type="password" id="password6">
+              </div>
+          </div>
+          <div class="buttonslogin">
+              <input class="orangebutton" type="button" value="Dénoncer" onclick="checkPassword6()">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>École</h4>
+                <ul>
+                    <li><a href="Aproposdenouselevelucioles.html">Á propos de nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Liens utiles</h4>
+                <ul>
+                  <li><a href="https://www.hbo.com/the-last-of-us">Regarder la série</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/The_Last_of_Us_(TV_series)">Le wikipedia de la série</a></li>
+                  <li><a href="https://www.heaj.be/en/">la Haute école Albert-Jacquard</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Icons</h4>
+                <div class="social-links">
+                    <a href="alessialogin.html" target="_blank">🔎</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </footer>
+  </body>
+</html>
